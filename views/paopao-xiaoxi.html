@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>泡泡-消息</title>
+    <link rel="stylesheet" href="../public/stylesheets/iconfont.css">
+    <link rel="stylesheet" href="../public/stylesheets/paopao-xiaoxi.css">
+    <link rel="stylesheet" href="../public/stylesheets/public(1).css">
+</head>
+<body>
+<!--顶部-->
+<header>
+    <div class="head_top">
+        <a href="index.html"><img src="../public/images/p02.png" alt="">爱奇艺首页</a>
+        <a><p class="on">互动</p><p>通知</p></a>
+        <a href="#"><img src="../public/images/x01.png" alt=""></a>
+    </div>
+</header>
+
+
+<!-- section -->
+<section>
+    <div class="sect01 banner show">
+        <div class="sec_top">
+            <a href="#"><img src="../public/images/x02.png" alt=""><p>评论/回复我的<span>还没有收到过消息~逛逛泡泡吧~ </span></p></a>
+            <a href="#"><img src="../public/images/x03.png" alt=""><p>赞我的<span>还没有收到过消息~逛逛泡泡吧~ </span></p></a>
+        </div>   
+        <div class="sec_mid">
+            <a href="#">
+                <img src="../public/images/x04.png" alt="">
+                <div class="psDiv">
+                    <div class="fir"><h4>小泡儿</h4><span>官方账号</span></div>
+                    <p>欢迎用户加入泡泡的大家庭，聊剧情、谈生活</p>
+                </div>
+                <p>刚刚</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="sect02 banner">
+        <div class="sec_top">
+            <a href="#">
+                <img src="../public/images/x02.png" alt="">
+                <p>评论/回复我的<span>还没有收到过消息~逛逛泡泡吧~ </span></p>
+                <i>刚刚</i>
+            </a>
+        </div>   
+    </div>
+</section>
+ 
+
+<!-- 底部 -->
+<footer>
+    <a href="paopao-kandian.html" class="alis"><i class="iconfont icon-shuaxin"></i><p>看点</p><span></span></a>
+    <a href="paopao-jinquan.html" class="alis"><i class="iconfont icon-yonghuzu"></i><p>进圈</p><span></span></a>
+    <a href="#" class="alis"><i class="iconfont icon-jiahao"></i><p class="ptxt">发布</p><span></span></a>
+    <a href="paopao-faxian.html" class="alis"><i class="iconfont icon-ziyuan"></i><p>发现</p><span></span></a>
+    <a href="paopao-xiaoxi.html" class="alis focus"><i class="iconfont icon-xiaoxi1"></i><p>消息</p><span></span></a>
+</footer>
+</body>
+</html>
+
+<script src="../public/javascripts/jquery-1.11.0.min.js"></script>
+<script>
+
+// 顶部
+$(function(){
+    $(".head_top a p").click(function(){
+        let aindex=$(".head_top a p").index(this);
+        $(this).addClass("on").siblings().removeClass("on");
+        $("section .banner").eq(aindex).fadeIn(150).siblings(".banner").hide();
+    });
+});
+
+
+// 底部
+$(function(){
+    $(".alis").click(function(){
+        $(this).addClass("focus").siblings().removeClass("focus");
+    });
+});
+
+</script>

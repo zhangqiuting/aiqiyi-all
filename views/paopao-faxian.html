@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>泡泡-发现</title>
+    <link rel="stylesheet" href="../public/stylesheets/iconfont.css">
+    <link rel="stylesheet" href="../public/stylesheets/paopao-faxian.css">
+    <link rel="stylesheet" href="../public/stylesheets/public(1).css">
+    <link rel="stylesheet" href="../public/stylesheets/swiper.css">
+</head>
+<body>
+<!--顶部-->
+<header>
+    <div class="head_top">
+        <a href="index.html"><img src="../public/images/p02.png" alt="">爱奇艺首页</a>
+        <p>发现</p>
+        <a href="#"><img src="../public/images/p01.png" alt=""></a>
+    </div>
+    <div class="head_bot">
+        <a href="#"><p>蔡徐坤</p><input type="button"><img src="../public/images/p03.png" alt=""></a>
+    </div>
+</header>
+
+<!-- section -->
+<section>
+    <!--轮播图-->
+    <div class="swiper_con swiper-container">
+        <div class="swiper-wrapper">
+            <img class="swiper-slide" src="../public/images/f01.png" alt="">
+            <img class="swiper-slide" src="../public/images/f02.png" alt="">
+            <img class="swiper-slide" src="../public/images/f03.png" alt="">
+            <img class="swiper-slide" src="../public/images/f04.png" alt="">
+            <img class="swiper-slide" src="../public/images/f05.png" alt="">
+        </div>
+    </div>
+    <div class="section_con">
+        <a href="#"><img src="../public/images/f06.png" alt="">明星来了</a>
+        <a href="#"><img src="../public/images/f07.png" alt="">应援</a>
+        <a href="#"><img src="../public/images/f08.png" alt="">热圈</a>
+        <a href="#"><img src="../public/images/f09.png" alt="">我拍</a>
+    </div>
+    <div class="section_bann">
+        <div class="banner_top">
+            <a href="#"><img src="../public/images/f17.png" alt=""><h4>泡泡UP榜</h4><p>实时更新</p></a>
+            <a href="#">全部<i class="iconfont icon-arrow-right"></i></a>
+        </div>
+        <div class="bann_imgs">
+            <img src="../public/images/f10.png" alt="">
+            <img src="../public/images/f11.png" alt="">
+            <img src="../public/images/f12.png" alt="">
+            <img src="../public/images/f10.png" alt="">
+            <img src="../public/images/f11.png" alt="">
+            <img src="../public/images/f12.png" alt="">
+        </div>
+        <div class="bann_txt">
+            <p>/话题榜/</p>
+            <div class="bann_txt_con">
+                <a href="#"><img src="../public/images/f13.png" alt="">#千人比W告白陈...#</a>
+                <a href="#"><img src="../public/images/f14.png" alt="">#黄金忙内0901破...#</a>
+                <a href="#"><img src="../public/images/f15.png" alt="">#说唱pick榜：哪...#</a>
+                <a href="#"><img src="../public/images/f16.png" alt="">全部话题</a>
+            </div>
+        </div>       
+    </div>
+
+    <div class="section_bann">
+        <div class="banner_top">
+            <a href="#"><img src="../public/images/f18.png" alt=""><h4>我拍</h4><p>请开始你的表演</p></a>
+            <a href="#">全部<i class="iconfont icon-arrow-right"></i></a>
+        </div>
+        <div class="bann_big">
+            <img src="../public/images/f20.png" alt="">
+            <img src="../public/images/f21.png" alt="">
+            <img src="../public/images/f22.png" alt="">
+        </div>      
+    </div>
+
+    <div class="section_bann">
+        <div class="banner_top">
+            <a href="#"><img src="../public/images/f19.png" alt=""><h4>应援活动</h4></a>
+            <a href="#">全部<i class="iconfont icon-arrow-right"></i></a>
+        </div>
+        <div class="fabu">
+            <img class="bigimg" src="../public/images/f23.png" alt="">
+            <a><h5>《我和两个他》发布会应援</h5><span>61%</span></a>
+            <i></i>
+            <a><p>目标￥ 6666.00</p><span><img src="../public/images/f26.png" alt="">已截止</span><span>133人参与</span></a>
+        </div>  
+    </div>
+
+    <div class="section_bann">
+        <div class="banner_top">
+            <a href="#"><img src="../public/images/f24.png" alt=""><h4>精选话题</h4></a>
+            <a href="#">全部<i class="iconfont icon-arrow-right"></i></a>
+        </div>
+        <img class="bigimg" src="../public/images/f25.png" alt="">
+    </div>
+    <div class="foo">没有更多了</div>
+</section>
+
+
+
+
+<!-- 底部 -->
+<footer>
+    <a href="paopao-kandian.html" class="alis"><i class="iconfont icon-shuaxin"></i><p>看点</p><span></span></a>
+    <a href="paopao-jinquan.html" class="alis"><i class="iconfont icon-yonghuzu"></i><p>进圈</p><span></span></a>
+    <a href="#" class="alis"><i class="iconfont icon-jiahao"></i><p class="ptxt">发布</p><span></span></a>
+    <a href="paopao-faxian.html" class="alis focus"><i class="iconfont icon-ziyuan"></i><p>发现</p><span></span></a>
+    <a href="paopao-xiaoxi.html" class="alis"><i class="iconfont icon-xiaoxi1"></i><p>消息</p><span></span></a>
+</footer>
+</body>
+</html>
+<script src="../public/javascripts/jquery-1.11.0.min.js"></script>
+<script src="../public/javascripts/swiper.min.js"></script>
+<script>
+
+// 轮播图
+var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    }
+});
+
+// 底部
+$(function(){
+    $(".alis").click(function(){
+        $(this).addClass("focus").siblings().removeClass("focus");
+    });
+});
+
+</script>
